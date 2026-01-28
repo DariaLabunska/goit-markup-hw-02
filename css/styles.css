@@ -5,6 +5,12 @@ body {
 }
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
 }
 
 a {
@@ -21,6 +27,7 @@ h1 {
 
 .link {
     color: #2E2F42;
+    margin-right: 40px;
 }
 
 .address-link {
@@ -40,6 +47,7 @@ h1 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2E2F42;
+    padding-right: 76px;
 }
 
 .logo-accent {
@@ -51,6 +59,7 @@ h1 {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-right: 40px;
 }
 
 .contacts {
@@ -61,11 +70,47 @@ h1 {
     color: #434455;
 }
 
+.container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.all-navigation-line-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip-path: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /*///////////HERO-SECTION/////////////*/
 
 .hero {
     background-color: #2E2F42;
+    
 }
+
 .hero-title {
     font-weight: 700;
     font-size: 56px;
@@ -73,6 +118,8 @@ h1 {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin: 0 auto;
 }
 
 .hero-btn {
@@ -83,21 +130,43 @@ h1 {
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4D5AE5;
+    padding: 16px 32px 16px 32px;
+    border-radius: 4px;
+    margin-top: 48px;
+}
+
+.hero-btn-container {
+    text-align: center;
 }
 
 .hero-btn:hover, .hero-btn:focus {
     background-color: #404BBF;
 }
+
+.hero-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
 /*////////////ANOTHER-SECTIONS//////////*/
+
+/*.future {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}*/
+
 .header-3 {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team-card {
     background-color: #F4F4FD;
+    /*padding-top: 120px;
+    padding-bottom: 120px;*/
 }
 
 .team-cards {
@@ -116,6 +185,11 @@ h1 {
     text-align: center;
 }
 
+.member-dscr {
+    p-top: 32px;
+    padding-bottom: 32px;
+}
+
 .team-profession {
     text-align: center;
 }
@@ -126,7 +200,13 @@ h1 {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 72px;
 }
+
+/*.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}*/
 
 /*/////////////FOOTER////////////*/
 
